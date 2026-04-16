@@ -1,0 +1,26 @@
+[MASTER]
+# Use multiple CPU cores for faster analysis
+jobs=1
+
+[MESSAGES CONTROL]
+# Disable specific messages that are too strict for ML projects
+# C0114: Missing module docstring (we handle these manually)
+# C0116: Missing function docstring
+# R0903: Too few public methods (data classes have few methods)
+disable=C0114,C0116,R0903
+
+[FORMAT]
+# Maximum line length — 88 is the Black formatter standard
+max-line-length=88
+
+[BASIC]
+# Allow short variable names common in ML (X, y, lr, etc.)
+good-names=i,j,k,x,y,f,X,lr,df,e,_
+
+[DESIGN]
+# Allow functions to have up to 10 arguments (common in ML)
+max-args=10
+
+[SIMILARITIES]
+# Minimum lines of similar code to trigger duplicate warning
+min-similarity-lines=10
