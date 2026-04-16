@@ -61,11 +61,18 @@ def evaluate_model(model, x_test, y_test):
     logger.info("Accuracy: %.4f", accuracy)
 
     # classification_report shows precision, recall, F1 for each class
-    report = classification_report(
-        y_test,
-        predictions,
-        target_names=["setosa", "versicolor", "virginica"]
-    )
+    labels = sorted(set(y_test) | set(predictions))
+
+    if len(labels) == 3:
+        report = classification_report(
+            y_test,
+            predictions,
+            target_names=["setosa", "versicolor", "virginica"]
+        )
+    else:
+        # When not all classes are present, pass explicit labels so
+        report = classification_report(y_test, predictions, labels=labels)
+
     logger.info("Classification Report:\n%s", report)
     return accuracy
 
