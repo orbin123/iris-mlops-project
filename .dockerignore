@@ -1,0 +1,28 @@
+# Git files
+.git
+.gitignore
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+
+# Virtual environment (never copy this into Docker!)
+venv/
+env/
+
+# Model files (the container will create these at runtime)
+models/
+
+# Test files (not needed for production image)
+tests/
+
+# Development files
+.pylintrc
+README.md
+Dockerfile
+.dockerignore
+
+# macOS
+.DS_Store
