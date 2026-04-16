@@ -4,7 +4,7 @@ iniconfig==2.3.0
 isort==8.0.1
 joblib==1.5.3
 mccabe==0.7.0
-numpy==2.4.4
+numpy==2.2.6
 packaging==26.1
 platformdirs==4.9.6
 pluggy==1.6.0
