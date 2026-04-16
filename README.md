@@ -1,26 +1,9 @@
 # 🌸 Iris MLOps Project
 
-![CI/CD Pipeline](https://github.com/YOUR_USERNAME/iris-mlops-project/actions/workflows/ci.yml/badge.svg)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![Docker](https://img.shields.io/badge/docker-ready-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-
 A production-ready Machine Learning project demonstrating industry best practices:
 Git workflow, unit testing, code quality, CI/CD pipelines, and Docker deployment.
 
 **Dataset:** Iris (from scikit-learn) | **Model:** Logistic Regression | **Accuracy:** ~97-100%
-
----
-
-## 📋 Table of Contents
-- [Project Overview](#project-overview)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Quick Start](#quick-start)
-- [Running Tests](#running-tests)
-- [Docker Usage](#docker-usage)
-- [CI/CD Pipeline](#cicd-pipeline)
-- [Git Workflow](#git-workflow)
 
 ---
 
