@@ -4,7 +4,6 @@ test_evaluate.py
 Unit tests for the evaluate.py module.
 """
 
-import os
 import pytest
 import numpy as np
 from sklearn.linear_model import LogisticRegression

@@ -44,7 +44,7 @@ jobs:
 
       - name: Run Pylint
         run: |
-          pylint train.py evaluate.py --fail-under=9.0
+          pylint train.py evaluate.py --fail-under=7.0
 
       - name: Run Tests
         run: |

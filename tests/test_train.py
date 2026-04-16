@@ -5,7 +5,6 @@ Unit tests for the train.py module.
 Tests each function in isolation.
 """
 
-import os 
 import pytest 
 import joblib 
 import numpy as np
